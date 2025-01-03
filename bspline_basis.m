@@ -8,7 +8,7 @@ function N = bspline_basis(i, p, knots, u)
     % Output:
     % N - N(u) the basis of bspline
     if p == 0
-        if knots(i+1) <= u && u < knots(i+2)
+        if knots(i+1) <= u && u <= knots(i+2)
             N = 1;
         else
             N = 0;
